@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Raleway:wght@700&display=swap');
+
 :root {
   --bgcolor: #c7ddf3c5;
-  --bgcolorTriviaTags: #d86b10 ;
-  --colorScore:#07ed6f;
-  --colorBtnConfig-BtnNext:#FEEA59;
-  --bgHeader-bglogo:linear-gradient(to top, #152012, #2a2e29, #0c0c0c);
-  --bgcolorTriviaQuestion:#2819f1;/* linear-gradient(to right,#7ca0c4c5, #7ea2c5c5) */
+  --bgcolorTriviaTags: #d86b10;
+  --colorScore: #07ed6f;
+  --colorBtnConfig-BtnNext: #FEEA59;
+  --bgHeader-bglogo: linear-gradient(to top, #152012, #2a2e29, #0c0c0c);
+  --bgcolorTriviaQuestion: #2819f1;
+  /* linear-gradient(to right,#7ca0c4c5, #7ea2c5c5) */
 }
 
 body {
@@ -95,7 +97,7 @@ button:active {
 }
 
 /* botoes jogo e login */
-.loginForm button, .btn-game, #btn-next,#btn-playagain,#btn-ranking,#ranking-container button{
+.loginForm button, .btn-game, #btn-next, #btn-playagain, #btn-ranking, #ranking-container button {
   margin: 1vh 0;
   border-radius: 3px;
   max-height: 3em;
@@ -126,7 +128,7 @@ button:active {
   margin: 2em 0 0 1em;
 }
 
-#triviaLogo>span,#ranking > span {
+#triviaLogo>span, #ranking>span {
   color: #4BC18D;
 }
 
@@ -160,7 +162,7 @@ button:active {
   transition: ease-in-out 300ms;
 }
 
-#btn-play:enabled,#btn-playagain {
+#btn-play:enabled, #btn-playagain {
   background-color: #5179FA;
 }
 
@@ -177,6 +179,19 @@ button:active {
   background-color: var(--bgcolor);
   max-width: 100vw;
   height: 100vh;
+}
+
+.correct-answer {
+  background-color: rgb(6, 240, 15);
+}
+
+.correct-answer, .wrong-answer {
+  color: rgba(0, 0, 0, 0.733);
+}
+
+.wrong-answer {
+  background-color: rgb(255, 0, 0);
+
 }
 
 #trivia header {
@@ -196,20 +211,23 @@ button:active {
   max-height: 1.5em;
   border-radius: 50%;
 }
-#user{
+
+#user {
   display: flex;
   justify-content: space-between;
   max-width: 10em;
-  gap: 1vw;   
+  gap: 1vw;
 }
-#name-header{
+
+#name-header {
   margin-top: 0.5vh;
-  text-transform:capitalize;
+  text-transform: capitalize;
 }
+
 #score {
   margin-right: 0.2em;
- color: var(--colorScore);
- text-shadow: 2px 2px 2px rgba(124, 121, 121, 0.58);
+  color: var(--colorScore);
+  text-shadow: 2px 2px 2px rgba(124, 121, 121, 0.58);
 }
 
 /* section questions */
@@ -223,6 +241,7 @@ button:active {
   padding: 0.4em;
   box-shadow: rgb(130 123 130) 6px 6px 9px;
 }
+
 #num-question {
   background: var(--bgcolorTriviaTags);
   position: absolute;
@@ -233,6 +252,7 @@ button:active {
   border-radius: 6px;
   box-shadow: rgb(130 123 130) 8px 0px 9px;
 }
+
 #questionSection #category {
   background-color: var(--bgcolorTriviaTags);
   font-size: 25px;
@@ -241,14 +261,14 @@ button:active {
   padding: 5px;
   position: absolute;
   top: 18.4vh;
-      left: 19.7vw;
+  left: 19.7vw;
   justify-content: center;
   border-radius: 6px;
 }
 
 #questionSection #question {
   margin-top: 10px;
-  color: #e4dedeef;
+  color: #f2f2f2;
   font-weight: 100em;
   font-family: Balsamiq Sans;
   font-size: 1.1em;
@@ -294,7 +314,7 @@ button:active {
   text-align: center;
   transition: ease-in 300ms;
   color: var(--bgcolorTriviaTags);
-  background-color:var(--bgcolor);
+  background-color: var(--bgcolor);
   text-shadow: 2px 2px 2px rgba(46, 44, 44, 0.58)
 }
 
@@ -327,13 +347,13 @@ button:active {
 
 /* feedback */
 
-#feedback-card{
+#feedback-card {
   max-width: 25vw;
   height: 75vh;
   border-radius: 7px;
   margin: 10vh 0 10vh 39vw;
-  background:  linear-gradient(to top, #000000, #4facf2);
-  animation:Zoom ease-in 3s ;
+  background: linear-gradient(to top, #000000, #4facf2);
+  animation: Zoom ease-in 3s;
   box-shadow: 1em 1em 1em -2px rgb(27, 26, 26);
 
 }
@@ -345,11 +365,13 @@ button:active {
     transform: scale(0.001) rotate(0deg);
     box-shadow: none;
   }
+
   to {
     transform: scale(1) rotate(720deg);
   }
 }
-#feedback-card header{
+
+#feedback-card header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -357,14 +379,16 @@ button:active {
   justify-content: space-around;
   font-size: x-large;
 }
-#feedback-card img{
+
+#feedback-card img {
   margin-top: 1.5em;
   max-width: 8vw;
   border-radius: 50%;
   border: solid var(--colorScore);
   box-shadow: 0em 0em 1em var(--colorScore);
 }
-#feedback{
+
+#feedback {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -373,78 +397,94 @@ button:active {
   margin: 5vh 0 0 2.9vw;
   padding: 1em;
   background-color: rgba(128, 128, 128, 0.336);
-  max-width:17vw;
+  max-width: 17vw;
   border-radius: 7px;
   box-shadow: 0em 0em 1em var(--colorScore);
 }
-#feedback-assertions > span{
+
+#feedback-assertions>span {
   margin-left: 5px;
 }
+
 #feedback-assertions {
   color: var(--colorScore);
   font-size: 20px;
 }
-#feedback-buttons{
+
+#feedback-buttons {
   display: flex;
   padding: 1em;
   justify-content: space-around;
   margin-top: 0.5em;
 }
-#feedback-score{
+
+#feedback-score {
   visibility: hidden;
 }
-#feedback-message{
-font-family: serif;
-font-size: x-large;
-font-style: italic;
-text-shadow: 2px 2px 2px rgba(46, 44, 44, 0.58)
+
+#feedback-message {
+  font-family: serif;
+  font-size: x-large;
+  font-style: italic;
+  text-shadow: 2px 2px 2px rgba(46, 44, 44, 0.58)
 }
-#feedback-card header #score-num,#feedback-message,#assertions-num{
-  color:antiquewhite ;
+
+#feedback-card header #score-num, #feedback-message, #assertions-num {
+  color: antiquewhite;
 }
-#feedback-card  #name-header{
+
+#feedback-card #name-header {
   color: #b7cbdf;
-  font-family: fantasy; 
+  font-family: fantasy;
 }
-#feedback-card #user{
+
+#feedback-card #user {
   flex-direction: column;
 }
-#btn-playagain{
-  color:white;
+
+#btn-playagain {
+  color: white;
 }
-#feedback-card #timer{
+
+#feedback-card #timer {
   visibility: hidden;
 }
-#btn-playagain:hover{
+
+#btn-playagain:hover {
   box-shadow: 0em 0em 1em rgb(45, 45, 214);
 
 }
-#btn-playagain,#btn-ranking{
+
+#btn-playagain, #btn-ranking {
   box-shadow: 0em 0em 5px rgb(215, 215, 247);
   transition: 200ms;
 }
-#btn-ranking{
+
+#btn-ranking {
   background-color: var(--colorBtnConfig-BtnNext);
   color: rgb(128, 3, 3);
 }
-#btn-ranking:hover{
+
+#btn-ranking:hover {
   box-shadow: 0em 0em 1em var(--colorBtnConfig-BtnNext);
 }
 
 /* Ranking */
-#main-ranking{
-max-height: 80.4vh;
-overflow: auto;
-margin: 0 30vw;
-text-transform: capitalize;
+#main-ranking {
+  max-height: 80.4vh;
+  overflow: auto;
+  margin: 0 30vw;
+  text-transform: capitalize;
 }
-#ranking-container{
-background: var(--bgcolor);
-height: 100vh;
-width: 100vw;
-position: absolute;
+
+#ranking-container {
+  background: var(--bgcolor);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
 }
-#ranking-container button{
+
+#ranking-container button {
   position: absolute;
   width: 6vw;
   height: 9vh;
@@ -456,10 +496,12 @@ position: absolute;
   background: var(--colorBtnConfig-BtnNext);
   box-shadow: rgb(15, 1, 15) 3px 3px 3px;
 }
-#ranking-container button:active{
+
+#ranking-container button:active {
   box-shadow: rgb(15, 1, 15) 1px 1px 1px;
-} 
-#main-ranking > div {
+}
+
+#main-ranking>div {
   display: flex;
   padding: 1em;
   max-width: 50vw;
@@ -468,10 +510,12 @@ position: absolute;
   background: linear-gradient(to right, #ba8b02, #181818);
   align-items: center;
 }
+
 #main-ranking img {
   border-radius: 50%;
   max-width: 10vh;
 }
+
 /* scroll effect */
 *::-webkit-scrollbar {
   width: 2em;
@@ -484,8 +528,9 @@ position: absolute;
 *::-webkit-scrollbar-thumb {
   background-color: var(--bgcolorTriviaQuestion);
   border-radius: 20px;
-  
+
 }
+
 #ranking {
   margin: 0.4em 0 4vh 45vw;
   width: fit-content;
@@ -495,33 +540,42 @@ position: absolute;
   text-shadow: 2px 2px 2px rgb(153, 153, 153);
 
 }
-#rank1{
+
+#rank1 {
   font-size: xx-large;
 }
-#rank1 span{
+
+#rank1 span {
   font-size: xxx-large;
   color: yellow;
 }
-#rank2{
+
+#rank2 {
   font-size: xx-large;
 }
-#rank2 span{
+
+#rank2 span {
   color: silver;
 }
-#rank3{
+
+#rank3 {
   font-size: x-large;
 
 }
-#rank3 span{
+
+#rank3 span {
   color: brown;
 }
+
 #main-ranking {
   color: white;
   text-shadow: 2px 2px 2px rgb(112, 50, 117);
 }
-#score-rank,#name-rank{
-font-size: 1.3em;
+
+#score-rank, #name-rank {
+  font-size: 1.3em;
 }
-#score-rank{
+
+#score-rank {
   color: var(--colorScore);
 }

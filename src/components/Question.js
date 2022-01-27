@@ -79,8 +79,11 @@ class Question extends Component {
       const testId = btn.getAttribute('data-testid');
 
       if (testId === nameId) {
+        btn.className='correct-answer'
         btn.style.border = '3px solid rgb(6, 240, 15)';
+   
       } else {
+        btn.className='wrong-answer'
         btn.style.border = '3px solid rgb(255, 0, 0)';
       }
     });
