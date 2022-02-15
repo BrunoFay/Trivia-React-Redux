@@ -27,3 +27,7 @@ O objetivo era desenvolver em grupo um jogo de perguntas e respostas através de
 [![Watch the video](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvX7XjW8SbO7M8RFY41EYr8WtFq9QouZ7L5A&usqp=CAU)](https://youtu.be/HYQIzE-SFgQ)
 
 membros do grupo: @gabrielpinheiro @diegomendes @rafaelfriederick
+
+## Para visualizar o projeto funcionando, clique no link abaixo !
+
+https://trivia-react-redux-kappa.vercel.app/
