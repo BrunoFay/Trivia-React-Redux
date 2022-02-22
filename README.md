@@ -1,4 +1,4 @@
-# Trivia project done as a group in the web developer course at Trybe [ENGLISH]
+# Trivia Group Project Trybe [ENGLISH]
 The objective was to develop in group, a game of questions and answers through a React application using Redux and agile methodologies.
 
 ### Redux
